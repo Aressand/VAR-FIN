@@ -1,0 +1,49 @@
+2025-05-26 12:17:32,927 - VAR Workflow Processor - INFO - ============================================================
+2025-05-26 12:17:32,928 - VAR Workflow Processor - INFO - VAR Workflow Processor v2.0.0
+2025-05-26 12:17:32,928 - VAR Workflow Processor - INFO - Avvio: 26/05/2025 12:17:32
+2025-05-26 12:17:32,928 - VAR Workflow Processor - INFO - Python: 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]
+2025-05-26 12:17:32,928 - VAR Workflow Processor - INFO - ============================================================
+2025-05-26 12:17:32,931 - VAR Workflow Processor - INFO - Directory input validata: C:\Users\Utente\Desktop\Lavoro\Progetti\VARFIN\var_processor_production
+2025-05-26 12:17:32,931 - VAR Workflow Processor - INFO -   • File post vendita: trovato
+2025-05-26 12:17:32,931 - VAR Workflow Processor - INFO -   • File TI: 2 trovati
+2025-05-26 12:17:32,932 - VAR Workflow Processor - INFO -   • File dati finanziari: trovato
+2025-05-26 12:17:32,932 - VAR Workflow Processor - INFO - Inizio elaborazione VAR workflow...
+2025-05-26 12:17:32,932 - processors.var_processor - INFO - Inizializzato VAR Processor: C:\Users\Utente\Desktop\Lavoro\Progetti\VARFIN\var_processor_production
+2025-05-26 12:17:32,932 - processors.var_processor - INFO - Avvio workflow VAR...
+2025-05-26 12:17:32,932 - processors.var_processor - INFO - Ricerca e validazione file...
+2025-05-26 12:17:32,933 - processors.var_processor - INFO - File post vendita: post_vendita_fisici.xlsx
+2025-05-26 12:17:32,933 - processors.var_processor - INFO - File TI trovati: 2
+2025-05-26 12:17:32,933 - processors.var_processor - INFO -   • telefono_incluso_20250526_113623 TELEFONOMIO VAR+PROMO CASH APRILE.xlsx
+2025-05-26 12:17:32,934 - processors.var_processor - INFO -   • telefono_incluso_20250526_113714 MINELLI GROUP VAR+ PROMO CASH APRILE 25.xlsx
+2025-05-26 12:17:32,934 - processors.var_processor - INFO - File dati finanziari: data.xlsx
+2025-05-26 12:17:32,970 - processors.var_processor - INFO - Caricamento post_vendita_fisici.xlsx...
+2025-05-26 12:17:33,257 - processors.var_processor - INFO - Caricati 311 record da post_vendita_fisici
+2025-05-26 12:17:33,258 - utils.validators - INFO - post_vendita_fisici: tutte le colonne richieste presenti
+2025-05-26 12:17:33,259 - utils.validators - WARNING - IMEI validation: 309/311 validi, 2 invalidi
+2025-05-26 12:17:33,260 - processors.var_processor - INFO - IMEI post vendita: 309/311 validi
+2025-05-26 12:17:33,261 - processors.var_processor - INFO - Caricamento file telefono_incluso...
+2025-05-26 12:17:33,261 - processors.var_processor - INFO - Elaborazione telefono_incluso_20250526_113623 TELEFONOMIO VAR+PROMO CASH APRILE.xlsx...
+2025-05-26 12:17:33,291 - utils.validators - INFO - telefono_incluso_20250526_113623 TELEFONOMIO VAR+PROMO CASH APRILE.xlsx: tutte le colonne richieste presenti
+2025-05-26 12:17:33,293 - processors.var_processor - INFO - telefono_incluso_20250526_113623 TELEFONOMIO VAR+PROMO CASH APRILE.xlsx: 57/57 IMEI validi
+2025-05-26 12:17:33,293 - processors.var_processor - INFO - Elaborazione telefono_incluso_20250526_113714 MINELLI GROUP VAR+ PROMO CASH APRILE 25.xlsx...
+2025-05-26 12:17:33,336 - utils.validators - INFO - telefono_incluso_20250526_113714 MINELLI GROUP VAR+ PROMO CASH APRILE 25.xlsx: tutte le colonne richieste presenti
+2025-05-26 12:17:33,338 - processors.var_processor - INFO - telefono_incluso_20250526_113714 MINELLI GROUP VAR+ PROMO CASH APRILE 25.xlsx: 109/109 IMEI validi
+2025-05-26 12:17:33,340 - processors.var_processor - INFO - TI combinati: 166 record validi da 166 totali
+2025-05-26 12:17:33,341 - processors.data_processor - INFO - Caricamento file dati finanziari: data.xlsx
+2025-05-26 12:17:33,367 - processors.data_processor - INFO - Caricati 145 record da data.xlsx
+2025-05-26 12:17:33,367 - utils.validators - INFO - data.xlsx: tutte le colonne richieste presenti
+2025-05-26 12:17:33,368 - utils.validators - INFO - data.xlsx: 145 righe caricate
+2025-05-26 12:17:33,368 - processors.data_processor - INFO - Elaborazione record dati finanziari...
+2025-05-26 12:17:33,431 - utils.validators - INFO - data.xlsx: 144 IMEI unici processati
+2025-05-26 12:17:33,432 - processors.data_processor - INFO - Breakdown finanziarie: {'FINDOMESTIC': 111, 'COMPASS': 33}
+2025-05-26 12:17:33,432 - processors.data_processor - INFO - Dati finanziari processati: 144 IMEI
+2025-05-26 12:17:33,432 - processors.var_processor - INFO - Dati finanziari caricati: 144 IMEI
+2025-05-26 12:17:33,433 - processors.var_processor - INFO - Elaborazione matching IMEI...
+2025-05-26 12:17:33,468 - processors.var_processor - INFO - Mapping creati: 309 post vendita, 166 TI
+2025-05-26 12:17:33,471 - processors.var_processor - INFO - Matching completato:
+2025-05-26 12:17:33,471 - processors.var_processor - INFO -   • IMEI totali: 321
+2025-05-26 12:17:33,471 - processors.var_processor - INFO -   • IMEI matched: 154
+2025-05-26 12:17:33,472 - processors.var_processor - INFO -   • Solo post vendita: 155
+2025-05-26 12:17:33,472 - processors.var_processor - INFO -   • Solo TI: 12
+2025-05-26 12:17:33,472 - processors.var_processor - ERROR - Errore durante l'elaborazione: '<' not supported between instances of 'datetime.datetime' and 'str'
+2025-05-26 12:17:33,472 - VAR Workflow Processor - ERROR - Errore critico: '<' not supported between instances of 'datetime.datetime' and 'str'

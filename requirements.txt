@@ -1,0 +1,33 @@
+# VAR Workflow Processor - Production Requirements
+# ==============================================
+
+# Core data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Excel file handling
+openpyxl>=3.1.0
+xlrd>=2.0.1
+
+# Progress bars and user interface
+tqdm>=4.65.0
+
+# Development and testing (optional)
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Logging and monitoring (optional)
+structlog>=23.1.0
+
+# Memory profiling (optional for large files)
+memory-profiler>=0.60.0
+
+# Configuration management (optional)
+pyyaml>=6.0
+
+# Type checking (development only)
+mypy>=1.5.0
+
+# Code formatting (development only)
+black>=23.0.0
+flake8>=6.0.0
